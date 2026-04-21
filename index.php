@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php include 'cabecera.php'; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de ingreso ChevyPlan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
 
-<body class="bg-gray-50">
-    <header class="bg-white shadow">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <h1 class="text-2xl font-bold text-gray-900">ChevyPlan</h1>
-        </nav>
-    </header>
+<section class="text-center">
+    <h2 class="text-6xl font-bold text-gray-900 mb-4 mt-4">Bienvenido</h2>
+    <p class=" text-gray-600 text-[20px]">Prueba de ingreso Camilo Andrés Fique.</p>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <section class="text-center">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Bienvenido</h2>
-            <p class="text-lg text-gray-600">Prueba de ingreso Camilo Andr&eacute;s Fique.</p>
-        </section>
-    </main>
-</body>
+    <p class="font-bold text-lg mt-10">Escoge una de las opciones del menú</p>
 
-</html>
+    <div class="flex gap-4 flex-col text-lg mt-4">
+        <a href="<?= BASE_URL ?>index.php">Inicio</a>
+
+        <a href="<?= BASE_URL ?>solucion/1-normalizacion_datos.php">Normalización</a>
+
+        <a href="<?= BASE_URL ?>solucion/2-Debugging.php">Debugging</a>
+
+        <a href="<?= BASE_URL ?>solucion/3-manejo-api.php">Manejo de APIs</a>
+    </div>
+
+</section>
+
+
+<?php include 'footer.php'; ?>
